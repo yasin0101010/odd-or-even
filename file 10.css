@@ -1,0 +1,92 @@
+/* تنظیمات عمومی برای فرم */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #08a4ff, #2a0c96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+/* استایل برای ورودی‌های متن */
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #08a4ff;
+    box-shadow: 0 0 5px #08a4ff;
+    outline: none;
+}
+
+/* استایل برای دکمه ارسال */
+input[type="submit"] {
+    background: linear-gradient(90deg, #08a4ff, #2a0c96);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+button{
+    background: linear-gradient(90deg, #08a4ff, #2a0c96);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(90deg,#08a4ff, #2a0c96);
+    transform: scale(1.05);
+}
+button:hover{
+    background: linear-gradient(90deg,#08a4ff, #2a0c96);
+    transform: scale(1.05);
+}
+/* تنظیمات برای نمایش در مرکز صفحه */
+senter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* تنظیمات عمومی برای بخش خروجی */
+.output-container {
+    background: #ffffff;
+    border: 2px solid #08a4ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ظاهر زیباتر برای متن */
+.output-container span {
+    font-weight: bold;
+    color: #08a4ff;
+}
